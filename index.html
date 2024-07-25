@@ -1,22 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<script language = "javascript" type = "text/javascript">
-function myFunction() {
-var num1 = document.getElementById("n1").value; var num2 = document.getElementById("n2").value; 
-
-sum = parseInt(num1) + parseInt(num2);
- sub = num1-num2;     mul = num1*num2; 
- div = num1/num2;
-// display the sum
-document.write("Addition :",sum); document.write("<br>", "Subtraction :",sub); document.write("<br>", "Multiplication :",mul); document.write("<br>", "Division :",div);
-}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample web page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label>Enter Number1:</label>
-    <input type="text" id="n1"><br><br>
-    <label>Enter Number2:</label>
-    <input type="text" id="n2"><br><br>
-    <button onclick="myFunction()">Airthmetic operation</button>
-    </body>
+    <div class="container_1">
+        <h1><u>Login</u></h1>
+        <label class="user name">User Name:</label>
+        <input type="text" name="user name" id="user name"><br><br>
+        <label for="Email" class="email">Email:</label>
+        <input type="email" name="Email" id="Email"><br><br>
+        <label for="" class="password">Password:</label>
+        <input type="password" name="password" id="password"><br><br>
+        <input type="button" value="login">
+    </div>
+    <div class="container_2">
+        <h1><u>Sign-up</u></h1>
+        <label class="new_user">User Name:</label>
+        <input type="text" name="new_user" id="new_user"><br><br>
+        <label class="Create_pass">Create Password</label>
+        <input type="password" name="Create_pass" id="Create_pass"><br><br>
+        <label for="" class="Confirm_pass">Confirm Password</label>
+        <input type="password" name="Confirm_pass" id="Confirm_pass"><br><br>
+        <input type="button" value="Sign-up">
+
+    </div>
+</body>
 </html>
