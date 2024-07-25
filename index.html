@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<script language = "javascript" type = "text/javascript">
+function myFunction() {
+var num1 = document.getElementById("n1").value; var num2 = document.getElementById("n2").value; 
+
+sum = parseInt(num1) + parseInt(num2);
+ sub = num1-num2;     mul = num1*num2; 
+ div = num1/num2;
+// display the sum
+document.write("Addition :",sum); document.write("<br>", "Subtraction :",sub); document.write("<br>", "Multiplication :",mul); document.write("<br>", "Division :",div);
+}
+</script>
 </head>
 <body>
-    <script src="script.js"></script>
-</body>
+    <label>Enter Number1:</label>
+    <input type="text" id="n1"><br><br>
+    <label>Enter Number2:</label>
+    <input type="text" id="n2"><br><br>
+    <button onclick="myFunction()">Airthmetic operation</button>
+    </body>
 </html>
